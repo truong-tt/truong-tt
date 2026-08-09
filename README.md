@@ -1,25 +1,31 @@
-<h1 align="center">Hi, I'm Thế-Trường</h1>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="hero-dark.svg">
+  <img alt="A hospital corridor at dawn. Trần Thế Trường — machine learning for clinical work in Vietnam." src="hero-light.svg" width="100%">
+</picture>
 
-<p align="center">
-  <em>Der Mensch kann tun was er will.</em>
-</p>
+I'm a student in Vietnam building machine learning for clinical work. The thread through all of it: a hospital runs on people, and the useful thing software can do is hand them back their time.
 
----
+### → [**Walk the ward**](https://truong-tt.github.io/) — the long version, as a 3D night walk through a clinic
 
-### About me
+## What I'm building
 
-- A student based in Vietnam
-- I work on machine learning, mostly in healthcare
-- I think Data Science and Artificial Intelligence can take some of the load off medical staffs and patients, and that's worth doing
+**[CarePath](https://github.com/truong-tt/carepath-kpi)** — an AI medical scribe that listens in Vietnamese and writes the clinical note.
 
----
+Vietnamese is tonal and low-resource: one syllable carries six words depending on a mark above it, and real consultations braid dialect through Latin drug names. So the work is fine-tuning that survives the transcriber's own mistakes, and measuring **entity-level error on the drug, the dose, the diagnosis** — not a flattering average over every word in the sentence. The repo is the weekly engineering log: pipeline freeze, error logging, beta monitoring, held-out numbers.
 
-### What I'm working on
+**[HopeGait](https://github.com/truong-tt/parkinson-fog-device)** — real-time freezing-of-gait detection from a wearable IMU.
 
-I am currently developing CarePath, an AI-powered medical scribe application designed specifically for Vietnamese doctors. Building for Vietnamese, a low-resource language, presents unique challenges in accurately processing local dialects and complex medical terminology. The project focuses on overcoming these hurdles to automate clinical documentation and reduce administrative workloads for healthcare staff.
+Freezing of gait is a sudden mid-step arrest in Parkinson's and a primary fall risk. A causal temporal convolutional network reads the sensor — causal because a model that needs the future is no use mid-stride — quantised to int8 for a microcontroller at the hip. Cueing only helps if it arrives before the fall, so the whole design is an argument about latency. *Student research. Not a medical device.*
 
----
+**[fpl-ml-manager](https://github.com/truong-tt/fpl-ml-manager)** — an autonomous Fantasy Premier League manager.
 
-### Reach me
+The same modelling, none of the stakes: quantile regression for point distributions, two-stage minutes prediction, Poisson match goals, and a MILP optimiser picking squad, XI, captain, and chips. It runs itself twice a day on GitHub Actions and is wrong in public all season. Most of what I know about shipping a model I learned somewhere with a scoreboard and no patients.
 
-- [tranth3truong@gmail.com](mailto:tranth3truong@gmail.com)
+## Reach me
+
+[tranth3truong@gmail.com](mailto:tranth3truong@gmail.com) · Việt Nam, UTC+7
+
+<br>
+
+> *Der Mensch kann tun was er will.*
+> A person can do what they will.

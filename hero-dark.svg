@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="1200" height="420" role="img" aria-label="A hospital corridor at night, lit by warm wall lamps, with the name Tran The Truong">
+  <defs>
+    <linearGradient id="wallL" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0a0c0f"/><stop offset="1" stop-color="#1c1f25"/>
+    </linearGradient>
+    <linearGradient id="wallR" x1="1" y1="0" x2="0" y2="0">
+      <stop offset="0" stop-color="#0b0d11"/><stop offset="1" stop-color="#20242a"/>
+    </linearGradient>
+    <linearGradient id="floorG" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#0d1014"/><stop offset="1" stop-color="#1b1f25"/>
+    </linearGradient>
+    <radialGradient id="glow">
+      <stop offset="0" stop-color="#ffd9ac" stop-opacity=".95"/>
+      <stop offset=".3" stop-color="#e9a45c" stop-opacity=".34"/>
+      <stop offset="1" stop-color="#e9a45c" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="pool">
+      <stop offset="0" stop-color="#ffca90" stop-opacity=".46"/>
+      <stop offset="1" stop-color="#ffca90" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="scrim" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#07080a" stop-opacity=".96"/>
+      <stop offset=".34" stop-color="#07080a" stop-opacity=".74"/>
+      <stop offset=".62" stop-color="#07080a" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="vig" cx=".55" cy=".46" r=".8">
+      <stop offset=".42" stop-color="#07080a" stop-opacity="0"/>
+      <stop offset="1" stop-color="#07080a" stop-opacity=".78"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="420" fill="#07080a"/>
+
+  <!-- one-point perspective, vanishing right of centre so the convergence
+       stays visible beside the type -->
+  <polygon points="0,0 1200,0 860,150 700,150" fill="#0f1115"/>
+  <polygon points="0,420 1200,420 860,215 700,215" fill="url(#floorG)"/>
+  <polygon points="0,0 700,150 700,215 0,420" fill="url(#wallL)"/>
+  <polygon points="1200,0 860,150 860,215 1200,420" fill="url(#wallR)"/>
+  <rect x="700" y="150" width="160" height="65" fill="#0b0d11"/>
+
+  <!-- doorways receding down the right wall -->
+  <polygon points="1098,132.8 1057.2,138.9 1057.2,333.9 1098,358.5" fill="#0b0e12"/>
+  <polygon points="1023.2,143.9 989.2,149 989.2,292.9 1023.2,313.4" fill="#0b0e12"/>
+  <polygon points="962,153 934.8,157.1 934.8,260.1 962,276.5" fill="#0b0e12"/>
+  <polygon points="245,135.3 322,140.9 322,325.7 245,348.2" fill="#0b0e12"/>
+  <polygon points="1098,132.8 1057.2,138.9 1057.2,143 1098,137" fill="#2b3038"/>
+  <polygon points="1023.2,143.9 989.2,149 989.2,152.6 1023.2,147.6" fill="#2b3038"/>
+
+  <!-- dado rails -->
+  <polygon points="0,285.6 700,194.2 700,197.4 0,290" fill="#2b3038" opacity=".9"/>
+  <polygon points="1200,285.6 860,194.2 860,197.4 1200,290" fill="#2b3038" opacity=".9"/>
+
+  <!-- practicals: lamp, halo, and the pool it throws on the floor -->
+  <ellipse cx="1035" cy="342" rx="150" ry="42" fill="url(#pool)"/>
+  <ellipse cx="953" cy="288" rx="96" ry="27" fill="url(#pool)"/>
+  <ellipse cx="330" cy="352" rx="180" ry="48" fill="url(#pool)" opacity=".55"/>
+  <circle cx="1043" cy="125" r="92" fill="url(#glow)"/>
+  <circle cx="976" cy="140" r="64" fill="url(#glow)"/>
+  <circle cx="385" cy="132" r="80" fill="url(#glow)" opacity=".6"/>
+  <rect x="1035" y="121" width="20" height="8" rx="1" fill="#ffd7a4"/>
+  <rect x="970" y="137" width="14" height="6" rx="1" fill="#ffd7a4"/>
+
+  <!-- the window at the end of the corridor, only just beginning to lighten -->
+  <rect x="736" y="164" width="88" height="40" fill="#2b3646"/>
+  <rect x="779" y="164" width="2" height="40" fill="#0b0d11"/>
+  <rect x="736" y="183" width="88" height="2" fill="#0b0d11"/>
+
+  <rect width="1200" height="420" fill="url(#vig)"/>
+  <rect width="1200" height="420" fill="url(#scrim)"/>
+
+  <text x="72" y="150" font-family="ui-monospace,Consolas,'SF Mono',monospace" font-size="15"
+        letter-spacing="4.5" fill="#e9a45c">03:14 · CA TRỰC ĐÊM</text>
+  <text x="70" y="240" font-family="ui-serif,'Palatino Linotype',Palatino,Georgia,serif"
+        font-size="74" fill="#ede7dc">Trần Thế Trường</text>
+  <text x="72" y="286" font-family="ui-sans-serif,'Segoe UI',system-ui,sans-serif" font-size="21"
+        fill="#ede7dc" fill-opacity=".68">Machine learning for clinical work in Vietnam</text>
+
+  <!-- a gait trace: an even beat, a stall, then a recovered rhythm -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path id="trace" d="M72 344 L128 344 L140 328 L152 360 L164 344 L214 344 L226 328 L238 360 L250 344
+                        L316 344 L328 337 L340 351 L352 344 L392 344 L404 326 L416 362 L428 344 L484 344"
+          stroke="#ede7dc" stroke-opacity=".18" stroke-width="1.6"/>
+    <use href="#trace" stroke="#e9a45c" stroke-width="2.1" stroke-dasharray="46 460" stroke-dashoffset="506">
+      <animate attributeName="stroke-dashoffset" from="506" to="0" dur="3.4s" repeatCount="indefinite"/>
+    </use>
+  </g>
+</svg>
