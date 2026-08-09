@@ -1,11 +1,11 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="hero-dark.svg">
-  <img alt="A hospital corridor at dawn. Trần Thế Trường — machine learning for clinical work in Vietnam." src="hero-light.svg" width="100%">
+  <img alt="Dawn over layered mountain ridges. Trần Thế Trường — clinical machine learning, built in Vietnam." src="hero-light.svg" width="100%">
 </picture>
 
-I'm a student in Vietnam building machine learning for clinical work. The thread through all of it: a hospital runs on people, and the useful thing software can do is hand them back their time.
+I'm a student in Vietnam building machine learning for clinical work. Everything below is the same idea from a different angle: the machine takes the load, the person keeps the judgement.
 
-### → [**Walk the ward**](https://truong-tt.github.io/) — the long version, as a 3D night walk through a clinic
+### → [**First Light**](https://truong-tt.github.io/) — the long version, as a sunrise you scroll through
 
 ## What I'm building
 
