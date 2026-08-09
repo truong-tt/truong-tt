@@ -1,32 +1,65 @@
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="hero-dark.svg">
-  <img alt="Dawn over layered mountain ridges. Trần Thế Trường — clinical machine learning, built in Vietnam." src="hero-light.svg" width="100%">
-</picture>
+<img alt="TRẦN THẾ TRƯỜNG — Data Science. Voice and sensor systems for care work. Incoming undergraduate, VinUniversity, BSc Data Science, September 2026." src="banner.svg" width="100%">
 
-Incoming **BSc Data Science at VinUniversity** (September 2026). I build software for care work — the unglamorous, high-stakes kind that happens in clinics and in people's homes.
+```
+[ OPERATOR FILE / D-01 ]  ////////////////////////////////  VN — UTC+7
+```
 
-The through-line: a machine should carry the load and a person should keep the judgement. Which means the interesting engineering problem is usually not the model, but deciding exactly where the system has to stop — and making it say so plainly when it has not actually done the thing.
+### 01 — OPERATING PRINCIPLE
 
-### → [**truong-tt.github.io**](https://truong-tt.github.io/)
+I build software for care work — the unglamorous, high-stakes kind that happens in clinics and in people's homes. Most of what I make sits between a person who needs help and a family or clinician who can give it.
 
-## What I'm building
+The through-line is that **a machine should carry the load and a person should keep the judgement**. Which means the interesting engineering problem is usually not the model. It is deciding exactly where the system has to stop — and making it say so plainly when it has not actually done the thing.
 
-**[Kề](https://ke-elder-care-web.vercel.app/)** — voice-first care coordination for an older adult and their family. *(live demo)*
+### 02 — UNITS
 
-Spoken check-ins and everyday requests in Vietnamese become explicit states the family can review and act on, through a bounded coordinator with eight case states and a full event log. Every action stops at coordination or a handoff: an appointment request records a manual clinic contact and returns `booked: false`, a refill records that medicine is running low and orders nothing, marking a bill paid changes a local reminder and nothing else. Drawing that line — and making the system refuse to claim it acted — was the hard part.
+<table>
+<tr><td><b>UNIT / 01</b></td><td><b><a href="https://ke-elder-care-web.vercel.app/">Kề</a></b> — “beside”</td><td>● <b>LIVE DEMO</b></td></tr>
+</table>
 
-**[HopeGait](https://github.com/truong-tt/parkinson-fog-device)** — real-time freezing-of-gait detection from a wearable IMU.
+Voice-first care coordination for an older adult and their family. Spoken check-ins and everyday requests in Vietnamese become explicit states a family can review and act on, through a bounded coordinator with eight case states and a full event log.
 
-Freezing of gait is a sudden mid-step arrest in Parkinson's and a primary fall risk. A causal temporal convolutional network reads the sensor — causal because a model that needs the future is no use mid-stride — quantised to int8 for a microcontroller at the hip. Cueing only helps if it arrives before the fall, so the whole design is an argument about latency. *Student research. Not a medical device.*
+> **[ DECLARED LIMITS ]**
+> Every action stops at coordination or a handoff. An appointment request records a manual clinic contact and returns `booked: false`. A refill records that medicine is running low; it orders nothing. Marking a bill paid changes a local reminder and nothing else. Drawing that line — and making the system refuse to claim it acted — was the hard part.
 
-**[CarePath](https://carepath-omega.vercel.app/)** — an AI medical scribe that listens in Vietnamese and writes the clinical note. *(live demo)*
+`STACK` Next.js / Express / FastAPI  ·  `DOMAIN` Elder care  ·  `INTERFACE` Voice
 
-Vietnamese is tonal and low-resource, and real consultations braid dialect through Latin drug names. So the work is fine-tuning that survives the transcriber's own mistakes, and measuring **entity-level error on the drug, the dose, the diagnosis** — not a flattering average over every word in the sentence.
+---
 
-**[fpl-ml-manager](https://github.com/truong-tt/fpl-ml-manager)** — an autonomous Fantasy Premier League manager.
+<table>
+<tr><td><b>UNIT / 02</b></td><td><b><a href="https://carepath-omega.vercel.app/">CarePath</a></b> — AI medical scribe</td><td>● <b>LIVE DEMO</b></td></tr>
+</table>
 
-The same modelling, none of the stakes: quantile regression for point distributions, Poisson match goals, and a MILP optimiser picking squad, XI, captain and chips. It runs itself twice a day on GitHub Actions and is wrong in public all season. Most of what I know about shipping a model I learned somewhere with a scoreboard and no patients.
+It listens in Vietnamese and writes the clinical note, so the doctor can look at the person instead of the keyboard. Vietnamese is tonal and low-resource, and real consultations braid dialect through Latin drug names — so the work is fine-tuning that survives the transcriber's own mistakes, and measuring **entity-level error on the drug, the dose and the diagnosis** rather than a flattering average over every word.
 
-## Reach me
+`STACK` ASR / NLP  ·  `METRIC` Entity-level WER  ·  `LANGUAGE` VI — low-resource
 
-[tranth3truong@gmail.com](mailto:tranth3truong@gmail.com) · Việt Nam, UTC+7
+---
+
+<table>
+<tr><td><b>UNIT / 03</b></td><td><b><a href="https://github.com/truong-tt/parkinson-fog-device">HopeGait</a></b> — freezing-of-gait detection</td><td>◐ SOURCE</td></tr>
+</table>
+
+In Parkinson's the feet stop answering mid-stride, and it is a primary cause of falls. A causal temporal convolutional network reads a wearable IMU — causal because a model that needs the future is no use mid-step — quantised to int8 for a microcontroller at the hip. Cueing only helps if it arrives before the fall, so **the whole design is an argument about latency**. Student research, not a medical device.
+
+`MODEL` Causal TCN  ·  `TARGET` MCU / int8  ·  `SIGNAL` IMU
+
+---
+
+<table>
+<tr><td><b>UNIT / 04</b></td><td><b><a href="https://github.com/truong-tt/fpl-ml-manager">FPL ML Manager</a></b> — squad optimiser</td><td>◐ SOURCE</td></tr>
+</table>
+
+The same modelling, none of the stakes: quantile regression for point distributions, two-stage minutes prediction, Poisson match goals, and a mixed-integer optimiser picking squad, starting XI, captain and chips. It runs itself twice a day on GitHub Actions and is wrong in public all season. Most of what I know about shipping a model I learned somewhere with a scoreboard and no patients.
+
+`METHOD` Quantile / Poisson  ·  `OPTIMISER` MILP  ·  `CADENCE` 2× daily
+
+### 03 — CONTACT
+
+| CHANNEL | ADDRESS |
+|---|---|
+| Electronic mail | [tranth3truong@gmail.com](mailto:tranth3truong@gmail.com) |
+| Personal index | [truong-tt.github.io](https://truong-tt.github.io/) |
+
+```
+© 2026 TRẦN THẾ TRƯỜNG  ///  REV 2026.08
+```

@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 440" width="1600" height="440" role="img" aria-label="Trần Thế Trường — Data Science. Voice and sensor systems for care work.">
+  <defs>
+    <pattern id="hazard" width="28" height="28" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="14" height="28" fill="#0a0a0a"/>
+      <rect x="14" width="14" height="28" fill="#f4f4f0"/>
+    </pattern>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+    </filter>
+    <style>
+      .grot{font-family:-apple-system,"Segoe UI","Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:900}
+      .mono{font-family:ui-monospace,"Cascadia Mono","SF Mono",Consolas,monospace}
+    </style>
+  </defs>
+
+  <rect width="1600" height="440" fill="#f4f4f0"/>
+
+  <!-- masthead -->
+  <text class="mono" x="34" y="30" font-size="15" letter-spacing="3.2" fill="#0a0a0a">TRẦN THẾ TRƯỜNG ®</text>
+  <text class="mono" x="1566" y="30" font-size="15" letter-spacing="3.2" fill="#e61919" text-anchor="end">/// REV 2026.08</text>
+  <rect x="0" y="44" width="1600" height="2" fill="#0a0a0a"/>
+  <rect x="0" y="46" width="1600" height="18" fill="url(#hazard)"/>
+  <rect x="0" y="64" width="1600" height="2" fill="#0a0a0a"/>
+
+  <!-- kicker -->
+  <text class="mono" x="34" y="98" font-size="14" letter-spacing="3.4" fill="#6e6e69">[ OPERATOR FILE / D-01 ]</text>
+  <text class="mono" x="1566" y="98" font-size="14" letter-spacing="3.4" fill="#6e6e69" text-anchor="end">VN — UTC+7</text>
+
+  <!-- name -->
+  <text class="grot" x="28" y="228" font-size="118" letter-spacing="-5" fill="#0a0a0a">TRẦN THẾ TRƯỜNG</text>
+  <circle cx="1180" cy="216" r="17" fill="#e61919"/>
+
+  <!-- red rule -->
+  <rect x="34" y="248" width="1532" height="10" fill="#e61919"/>
+  <text class="mono" x="34" y="288" font-size="16" letter-spacing="3" fill="#0a0a0a">DATA SCIENCE — VOICE &amp; SENSOR SYSTEMS FOR CARE WORK</text>
+  <text class="mono" x="1566" y="288" font-size="16" letter-spacing="3" fill="#0a0a0a" text-anchor="end">EST. INTAKE 2026.09</text>
+
+  <!-- spec strip -->
+  <rect x="0" y="318" width="1600" height="2" fill="#0a0a0a"/>
+  <rect x="0" y="418" width="1600" height="2" fill="#0a0a0a"/>
+  <rect x="400" y="320" width="2" height="98" fill="#0a0a0a"/>
+  <rect x="800" y="320" width="2" height="98" fill="#0a0a0a"/>
+  <rect x="1200" y="320" width="2" height="98" fill="#0a0a0a"/>
+
+  <text class="mono" x="34"   y="352" font-size="13" letter-spacing="3.2" fill="#6e6e69">STATUS</text>
+  <text class="mono" x="34"   y="390" font-size="18" letter-spacing="1.6" fill="#e61919">INCOMING UNDERGRADUATE</text>
+  <text class="mono" x="434"  y="352" font-size="13" letter-spacing="3.2" fill="#6e6e69">INSTITUTION</text>
+  <text class="mono" x="434"  y="390" font-size="18" letter-spacing="1.6" fill="#0a0a0a">VINUNIVERSITY</text>
+  <text class="mono" x="834"  y="352" font-size="13" letter-spacing="3.2" fill="#6e6e69">PROGRAMME</text>
+  <text class="mono" x="834"  y="390" font-size="18" letter-spacing="1.6" fill="#0a0a0a">BSC DATA SCIENCE</text>
+  <text class="mono" x="1234" y="352" font-size="13" letter-spacing="3.2" fill="#6e6e69">ACTIVE UNITS</text>
+  <text class="mono" x="1234" y="390" font-size="18" letter-spacing="1.6" fill="#0a0a0a">04</text>
+
+  <rect width="1600" height="440" filter="url(#grain)" opacity="0.05" style="mix-blend-mode:multiply"/>
+</svg>
