@@ -19,7 +19,7 @@ Spoken check-ins and everyday requests in Vietnamese become explicit states the 
 
 Freezing of gait is a sudden mid-step arrest in Parkinson's and a primary fall risk. A causal temporal convolutional network reads the sensor — causal because a model that needs the future is no use mid-stride — quantised to int8 for a microcontroller at the hip. Cueing only helps if it arrives before the fall, so the whole design is an argument about latency. *Student research. Not a medical device.*
 
-**[CarePath](https://github.com/truong-tt/carepath-kpi)** — an AI medical scribe that listens in Vietnamese and writes the clinical note.
+**[CarePath](https://carepath-omega.vercel.app/)** — an AI medical scribe that listens in Vietnamese and writes the clinical note. *(live demo)*
 
 Vietnamese is tonal and low-resource, and real consultations braid dialect through Latin drug names. So the work is fine-tuning that survives the transcriber's own mistakes, and measuring **entity-level error on the drug, the dose, the diagnosis** — not a flattering average over every word in the sentence.
 
