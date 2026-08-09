@@ -25,7 +25,7 @@
 
   <!-- kicker -->
   <text class="mono" x="34" y="98" font-size="14" letter-spacing="3.4" fill="#6e6e69">[ OPERATOR FILE / D-01 ]</text>
-  <text class="mono" x="1566" y="98" font-size="14" letter-spacing="3.4" fill="#6e6e69" text-anchor="end">VN — UTC+7</text>
+  <text class="mono" x="1566" y="98" font-size="14" letter-spacing="3.4" fill="#6e6e69" text-anchor="end">HANOI, VN — UTC+7</text>
 
   <!-- name -->
   <text class="grot" x="28" y="228" font-size="118" letter-spacing="-5" fill="#0a0a0a">TRẦN THẾ TRƯỜNG</text>

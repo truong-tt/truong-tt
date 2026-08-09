@@ -1,7 +1,7 @@
 <img alt="TRẦN THẾ TRƯỜNG — Data Science. Voice and sensor systems for care work. Incoming undergraduate, VinUniversity, BSc Data Science, September 2026." src="banner.svg" width="100%">
 
 ```
-[ OPERATOR FILE / D-01 ]  ////////////////////////////////  VN — UTC+7
+[ OPERATOR FILE / D-01 ]  ////////////////////////  HANOI, VN — UTC+7
 ```
 
 ### 01 — OPERATING PRINCIPLE
@@ -59,6 +59,7 @@ The same modelling, none of the stakes: quantile regression for point distributi
 |---|---|
 | Electronic mail | [tranth3truong@gmail.com](mailto:tranth3truong@gmail.com) |
 | Personal index | [truong-tt.github.io](https://truong-tt.github.io/) |
+| Professional network | [linkedin.com/in/tru0ng-tr4n](https://www.linkedin.com/in/tru0ng-tr4n/) |
 
 ```
 © 2026 TRẦN THẾ TRƯỜNG  ///  REV 2026.08
